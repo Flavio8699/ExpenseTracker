@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		728315E72445ECB400FCBCDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728315E62445ECB400FCBCDB /* AppDelegate.swift */; };
+		728315E92445ECB400FCBCDB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728315E82445ECB400FCBCDB /* SceneDelegate.swift */; };
+		728315EC2445ECB400FCBCDB /* ExpenseTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 728315EA2445ECB400FCBCDB /* ExpenseTracker.xcdatamodeld */; };
+		728315EE2445ECB400FCBCDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728315ED2445ECB400FCBCDB /* ContentView.swift */; };
+		728315F02445ECB500FCBCDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 728315EF2445ECB500FCBCDB /* Assets.xcassets */; };
+		728315F32445ECB500FCBCDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 728315F22445ECB500FCBCDB /* Preview Assets.xcassets */; };
+		728315F62445ECB500FCBCDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 728315F42445ECB500FCBCDB /* LaunchScreen.storyboard */; };
+		728315FE2445ECD200FCBCDB /* Homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728315FD2445ECD200FCBCDB /* Homepage.swift */; };
+		728316032445EEBB00FCBCDB /* FASwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 728316022445EEBB00FCBCDB /* FASwiftUI */; };
+		728316092445EEEC00FCBCDB /* icons.json in Resources */ = {isa = PBXBuildFile; fileRef = 728316082445EEEC00FCBCDB /* icons.json */; };
+		7283160D2445EF1F00FCBCDB /* Font Awesome 5 Free-Solid-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7283160A2445EF1F00FCBCDB /* Font Awesome 5 Free-Solid-900.otf */; };
+		7283160E2445EF1F00FCBCDB /* Font Awesome 5 Free-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7283160B2445EF1F00FCBCDB /* Font Awesome 5 Free-Regular-400.otf */; };
+		7283160F2445EF1F00FCBCDB /* Font Awesome 5 Brands-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7283160C2445EF1F00FCBCDB /* Font Awesome 5 Brands-Regular-400.otf */; };
+		728316152445F93E00FCBCDB /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 728316142445F93E00FCBCDB /* QGrid */; };
+		72831643244717E100FCBCDB /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72831642244717E100FCBCDB /* CategoryView.swift */; };
+		728316462447181400FCBCDB /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728316452447181400FCBCDB /* CategoryCell.swift */; };
+		728316482447183A00FCBCDB /* AddCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728316472447183A00FCBCDB /* AddCategory.swift */; };
+		7283164A2447187500FCBCDB /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728316492447187500FCBCDB /* TopBar.swift */; };
+		7283164F244719B400FCBCDB /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7283164E244719B400FCBCDB /* RoundedButton.swift */; };
+		7283165224472B5C00FCBCDB /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7283165124472B5C00FCBCDB /* Date.swift */; };
+		7283165524472BFC00FCBCDB /* ExpenseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7283165424472BFC00FCBCDB /* ExpenseCell.swift */; };
+		7283165F2447307E00FCBCDB /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7283165E2447307E00FCBCDB /* Categories.swift */; };
+		7283168424474E2100FCBCDB /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7283168324474E2100FCBCDB /* Expenses.swift */; };
+		7283168624474ECC00FCBCDB /* AddExpense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7283168524474ECC00FCBCDB /* AddExpense.swift */; };
+		728316882447551A00FCBCDB /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728316872447551A00FCBCDB /* Double.swift */; };
+		728E4D68244881F400A2D812 /* Expense+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728E4D64244881F400A2D812 /* Expense+CoreDataClass.swift */; };
+		728E4D69244881F400A2D812 /* Expense+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728E4D65244881F400A2D812 /* Expense+CoreDataProperties.swift */; };
+		728E4D6A244881F400A2D812 /* Category+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728E4D66244881F400A2D812 /* Category+CoreDataClass.swift */; };
+		728E4D6B244881F400A2D812 /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728E4D67244881F400A2D812 /* Category+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		728315E32445ECB400FCBCDB /* Expense Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Expense Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		728315E62445ECB400FCBCDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		728315E82445ECB400FCBCDB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		728315EB2445ECB400FCBCDB /* ExpenseTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExpenseTracker.xcdatamodel; sourceTree = "<group>"; };
+		728315ED2445ECB400FCBCDB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		728315EF2445ECB500FCBCDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		728315F22445ECB500FCBCDB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		728315F52445ECB500FCBCDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		728315F72445ECB500FCBCDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		728315FD2445ECD200FCBCDB /* Homepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage.swift; sourceTree = "<group>"; };
+		728316082445EEEC00FCBCDB /* icons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = icons.json; sourceTree = "<group>"; };
+		7283160A2445EF1F00FCBCDB /* Font Awesome 5 Free-Solid-900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Free-Solid-900.otf"; sourceTree = "<group>"; };
+		7283160B2445EF1F00FCBCDB /* Font Awesome 5 Free-Regular-400.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Free-Regular-400.otf"; sourceTree = "<group>"; };
+		7283160C2445EF1F00FCBCDB /* Font Awesome 5 Brands-Regular-400.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Brands-Regular-400.otf"; sourceTree = "<group>"; };
+		72831642244717E100FCBCDB /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		728316452447181400FCBCDB /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		728316472447183A00FCBCDB /* AddCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCategory.swift; sourceTree = "<group>"; };
+		728316492447187500FCBCDB /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
+		7283164E244719B400FCBCDB /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		7283165124472B5C00FCBCDB /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		7283165424472BFC00FCBCDB /* ExpenseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCell.swift; sourceTree = "<group>"; };
+		7283165E2447307E00FCBCDB /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		7283168324474E2100FCBCDB /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
+		7283168524474ECC00FCBCDB /* AddExpense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpense.swift; sourceTree = "<group>"; };
+		728316872447551A00FCBCDB /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		728E4D64244881F400A2D812 /* Expense+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataClass.swift"; sourceTree = "<group>"; };
+		728E4D65244881F400A2D812 /* Expense+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		728E4D66244881F400A2D812 /* Category+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataClass.swift"; sourceTree = "<group>"; };
+		728E4D67244881F400A2D812 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		728315E02445ECB400FCBCDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				728316152445F93E00FCBCDB /* QGrid in Frameworks */,
+				728316032445EEBB00FCBCDB /* FASwiftUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		728315DA2445ECB400FCBCDB = {
+			isa = PBXGroup;
+			children = (
+				728315E52445ECB400FCBCDB /* ExpenseTracker */,
+				728315E42445ECB400FCBCDB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		728315E42445ECB400FCBCDB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				728315E32445ECB400FCBCDB /* Expense Tracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		728315E52445ECB400FCBCDB /* ExpenseTracker */ = {
+			isa = PBXGroup;
+			children = (
+				7283165024472B5200FCBCDB /* Extensions */,
+				72831641244717C400FCBCDB /* Views */,
+				728316282447085200FCBCDB /* Models */,
+				728316042445EECE00FCBCDB /* Icons */,
+				728315E62445ECB400FCBCDB /* AppDelegate.swift */,
+				728315E82445ECB400FCBCDB /* SceneDelegate.swift */,
+				728315ED2445ECB400FCBCDB /* ContentView.swift */,
+				728315EF2445ECB500FCBCDB /* Assets.xcassets */,
+				728315F42445ECB500FCBCDB /* LaunchScreen.storyboard */,
+				728315F72445ECB500FCBCDB /* Info.plist */,
+				728315EA2445ECB400FCBCDB /* ExpenseTracker.xcdatamodeld */,
+				728315F12445ECB500FCBCDB /* Preview Content */,
+			);
+			path = ExpenseTracker;
+			sourceTree = "<group>";
+		};
+		728315F12445ECB500FCBCDB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				728315F22445ECB500FCBCDB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		728316042445EECE00FCBCDB /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				7283160C2445EF1F00FCBCDB /* Font Awesome 5 Brands-Regular-400.otf */,
+				7283160B2445EF1F00FCBCDB /* Font Awesome 5 Free-Regular-400.otf */,
+				7283160A2445EF1F00FCBCDB /* Font Awesome 5 Free-Solid-900.otf */,
+				728316082445EEEC00FCBCDB /* icons.json */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		728316282447085200FCBCDB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				728E4D64244881F400A2D812 /* Expense+CoreDataClass.swift */,
+				728E4D65244881F400A2D812 /* Expense+CoreDataProperties.swift */,
+				728E4D66244881F400A2D812 /* Category+CoreDataClass.swift */,
+				728E4D67244881F400A2D812 /* Category+CoreDataProperties.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		72831641244717C400FCBCDB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7283165324472BEF00FCBCDB /* Expenses */,
+				7283164D244719A000FCBCDB /* Buttons */,
+				728316442447180000FCBCDB /* Categories */,
+				728316492447187500FCBCDB /* TopBar.swift */,
+				7283165E2447307E00FCBCDB /* Categories.swift */,
+				7283168324474E2100FCBCDB /* Expenses.swift */,
+				728315FD2445ECD200FCBCDB /* Homepage.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		728316442447180000FCBCDB /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				72831642244717E100FCBCDB /* CategoryView.swift */,
+				728316452447181400FCBCDB /* CategoryCell.swift */,
+				728316472447183A00FCBCDB /* AddCategory.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		7283164D244719A000FCBCDB /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				7283164E244719B400FCBCDB /* RoundedButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		7283165024472B5200FCBCDB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7283165124472B5C00FCBCDB /* Date.swift */,
+				728316872447551A00FCBCDB /* Double.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7283165324472BEF00FCBCDB /* Expenses */ = {
+			isa = PBXGroup;
+			children = (
+				7283165424472BFC00FCBCDB /* ExpenseCell.swift */,
+				7283168524474ECC00FCBCDB /* AddExpense.swift */,
+			);
+			path = Expenses;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		728315E22445ECB400FCBCDB /* ExpenseTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 728315FA2445ECB500FCBCDB /* Build configuration list for PBXNativeTarget "ExpenseTracker" */;
+			buildPhases = (
+				728315DF2445ECB400FCBCDB /* Sources */,
+				728315E02445ECB400FCBCDB /* Frameworks */,
+				728315E12445ECB400FCBCDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExpenseTracker;
+			packageProductDependencies = (
+				728316022445EEBB00FCBCDB /* FASwiftUI */,
+				728316142445F93E00FCBCDB /* QGrid */,
+			);
+			productName = ExpenseTracker;
+			productReference = 728315E32445ECB400FCBCDB /* Expense Tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		728315DB2445ECB400FCBCDB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Flavio Matias";
+				TargetAttributes = {
+					728315E22445ECB400FCBCDB = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = 728315DE2445ECB400FCBCDB /* Build configuration list for PBXProject "ExpenseTracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 728315DA2445ECB400FCBCDB;
+			packageReferences = (
+				728316012445EEBB00FCBCDB /* XCRemoteSwiftPackageReference "FASwiftUI" */,
+				728316132445F93E00FCBCDB /* XCRemoteSwiftPackageReference "QGrid" */,
+			);
+			productRefGroup = 728315E42445ECB400FCBCDB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				728315E22445ECB400FCBCDB /* ExpenseTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		728315E12445ECB400FCBCDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				728315F62445ECB500FCBCDB /* LaunchScreen.storyboard in Resources */,
+				7283160E2445EF1F00FCBCDB /* Font Awesome 5 Free-Regular-400.otf in Resources */,
+				728315F32445ECB500FCBCDB /* Preview Assets.xcassets in Resources */,
+				728316092445EEEC00FCBCDB /* icons.json in Resources */,
+				728315F02445ECB500FCBCDB /* Assets.xcassets in Resources */,
+				7283160F2445EF1F00FCBCDB /* Font Awesome 5 Brands-Regular-400.otf in Resources */,
+				7283160D2445EF1F00FCBCDB /* Font Awesome 5 Free-Solid-900.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		728315DF2445ECB400FCBCDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7283165524472BFC00FCBCDB /* ExpenseCell.swift in Sources */,
+				7283164F244719B400FCBCDB /* RoundedButton.swift in Sources */,
+				728315E72445ECB400FCBCDB /* AppDelegate.swift in Sources */,
+				7283165224472B5C00FCBCDB /* Date.swift in Sources */,
+				7283165F2447307E00FCBCDB /* Categories.swift in Sources */,
+				728E4D6A244881F400A2D812 /* Category+CoreDataClass.swift in Sources */,
+				7283168424474E2100FCBCDB /* Expenses.swift in Sources */,
+				728E4D6B244881F400A2D812 /* Category+CoreDataProperties.swift in Sources */,
+				7283164A2447187500FCBCDB /* TopBar.swift in Sources */,
+				72831643244717E100FCBCDB /* CategoryView.swift in Sources */,
+				728E4D69244881F400A2D812 /* Expense+CoreDataProperties.swift in Sources */,
+				728315EC2445ECB400FCBCDB /* ExpenseTracker.xcdatamodeld in Sources */,
+				728315EE2445ECB400FCBCDB /* ContentView.swift in Sources */,
+				728E4D68244881F400A2D812 /* Expense+CoreDataClass.swift in Sources */,
+				728315FE2445ECD200FCBCDB /* Homepage.swift in Sources */,
+				7283168624474ECC00FCBCDB /* AddExpense.swift in Sources */,
+				728315E92445ECB400FCBCDB /* SceneDelegate.swift in Sources */,
+				728316462447181400FCBCDB /* CategoryCell.swift in Sources */,
+				728316882447551A00FCBCDB /* Double.swift in Sources */,
+				728316482447183A00FCBCDB /* AddCategory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		728315F42445ECB500FCBCDB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				728315F52445ECB500FCBCDB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		728315F82445ECB500FCBCDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		728315F92445ECB500FCBCDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		728315FB2445ECB500FCBCDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ExpenseTracker/ExpenseTracker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ExpenseTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = ZRNUGARP83;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ExpenseTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.flavio.ExpenseTracker;
+				PRODUCT_NAME = "Expense Tracker";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		728315FC2445ECB500FCBCDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ExpenseTracker/ExpenseTracker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ExpenseTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = ZRNUGARP83;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ExpenseTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.flavio.ExpenseTracker;
+				PRODUCT_NAME = "Expense Tracker";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		728315DE2445ECB400FCBCDB /* Build configuration list for PBXProject "ExpenseTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				728315F82445ECB500FCBCDB /* Debug */,
+				728315F92445ECB500FCBCDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		728315FA2445ECB500FCBCDB /* Build configuration list for PBXNativeTarget "ExpenseTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				728315FB2445ECB500FCBCDB /* Debug */,
+				728315FC2445ECB500FCBCDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		728316012445EEBB00FCBCDB /* XCRemoteSwiftPackageReference "FASwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mattmaddux/FASwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+		728316132445F93E00FCBCDB /* XCRemoteSwiftPackageReference "QGrid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Q-Mobile/QGrid";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		728316022445EEBB00FCBCDB /* FASwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 728316012445EEBB00FCBCDB /* XCRemoteSwiftPackageReference "FASwiftUI" */;
+			productName = FASwiftUI;
+		};
+		728316142445F93E00FCBCDB /* QGrid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 728316132445F93E00FCBCDB /* XCRemoteSwiftPackageReference "QGrid" */;
+			productName = QGrid;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		728315EA2445ECB400FCBCDB /* ExpenseTracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				728315EB2445ECB400FCBCDB /* ExpenseTracker.xcdatamodel */,
+			);
+			currentVersion = 728315EB2445ECB400FCBCDB /* ExpenseTracker.xcdatamodel */;
+			path = ExpenseTracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 728315DB2445ECB400FCBCDB /* Project object */;
+}
